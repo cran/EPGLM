@@ -1,0 +1,4 @@
+useDynLib(EPGLM)
+exportPattern("^[[:alpha:]]+")
+import(Rcpp)
+import(MASS)
