@@ -2,11 +2,13 @@
 \alias{EPprobit}
 %- Also NEED an '\alias' for EACH other topic documented here.
 \title{
-Compute the EP approximation of a probit regression.
+Compute the EP (expectation propagation) approximation of a probit regression.
 %%  ~~function to do ... ~~
 }
 \description{
 The function computes the EP approximation of a probit regression with Gaussian prior.
+ The user must specify the design matrix, the response vector
+and the prior variance. For more information on the default prior variance see Chopin and Ridgway [2015].
 }
 \usage{
 EPprobit(X, Y, s)
@@ -14,21 +16,22 @@ EPprobit(X, Y, s)
 %- maybe also 'usage' for other objects documented here.
 \arguments{
   \item{X}{
-Design matrix. Should include a constant column if a bias is to be considered.
+Design matrix. The matrix should include a constant column if a bias is to be considered. 
 %%     ~~Describe \code{X} here~~
 }
   \item{Y}{
-Response vector, souhld take values  0 and 1 
+Response vector. The vector should take values in {0,1}. 
 %%     ~~Describe \code{Y} here~~
 }
   \item{s}{
-Prior variance
+Prior variance. The prior is taken to be spherical Gaussian, the variance must therefore be specified in the form of a scalar.
+For default choices see Chopin and Ridgway [2015].
 %%     ~~Describe \code{s} here~~
 }
 }
 \details{
-The implementation is based on the remarks of Chopin and Ridgway (2015) and computes
- a Gaussian approximation to the Bayesian probit model. The approximation can serve as a very efficient estimation or as the starting point to Monte Carlo algorithms.
+The implementation is based on the remarks of Chopin and Ridgway (2015) and computes a Gaussian approximation to the Bayesian logit model. The approximation can serve as a very efficient estimation or as the starting point to Monte Carlo algorithms. The output value is given in the form 
+of the parameters of the Gaussian approximation (mean and variance matrix) and an approximation to the log marginal likelihood. 
 }
 \value{
 \item{m}{ Mean of the Gaussian approximation}
@@ -58,7 +61,7 @@ library(MASS)
 data(Pima.tr)
 Y<-as.matrix(as.numeric(Pima.tr[,8]))-1% formating the response
 X<-cbind(1,data.matrix(Pima.tr[,1:7]))% adding a constnat to the model
-Sol<-EPprobit(X,Y,100)%
+Sol<-EPprobit(X,Y,100)%EP approximation of the model Y~X with prior variance 100.
 }
 % Add one or more standard keywords, see file 'KEYWORDS' in the
 % R documentation directory.

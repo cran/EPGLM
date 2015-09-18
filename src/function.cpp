@@ -4,6 +4,7 @@
 #define BOOST_DISABLE_ASSERTS
 #include "header.h"
 
+
 // [[Rcpp::export]]
 Rcpp::List EPprobitCxx(mat X, mat Y, double s)
 {

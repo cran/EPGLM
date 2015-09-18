@@ -30,6 +30,7 @@ using namespace boost::math;
 using namespace arma;
 using namespace std;
 using namespace boost::math;
+using namespace Rcpp;
 
 #include "EP.h"
 #include "EPclogit.h"
