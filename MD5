@@ -1,4 +1,4 @@
-6065b57f30490e86d6ca98e33bcc390e *DESCRIPTION
+e1e2ede6151bd5c94cf9303052323452 *DESCRIPTION
 f889d7551597b67c01f0bcb42978923b *NAMESPACE
 d3d7478d7b9fdf945de264f1bca0924a *R/EP.R
 5cb5573df5e0d7d2509e641a34976b38 *man/EPGLM-package.Rd
@@ -9,5 +9,5 @@ f3c49ec49ac5f3d8bfa855e776340ee9 *man/EPlogitCxx.Rd
 9c8590865abcba221de9d9a5edea5408 *src/EP.h
 a1ec58a339f66f2eed3635c631f6d868 *src/EPclogit.h
 d8d2eb0a49c3b425c86e4a0eb3eab485 *src/Makevars
-dbf3e2f14df269e682d4db4c36258cc9 *src/function.cpp
+72d239c6d9692ac364a38b8baba9b15c *src/function.cpp
 76978c5d36fde694c7bf0f51a8ed1b94 *src/header.h
