@@ -1,7 +1,7 @@
 
-.onLoad <- function(libname,pkgname){
-	loadRcppModules()
-}
+loadModule("EPprobitCxx",TRUE)
+loadModule("EPlogitCxx",TRUE)
+
 
 EPprobit <-
 function (X, Y, s){

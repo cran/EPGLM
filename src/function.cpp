@@ -19,7 +19,7 @@ Rcpp::List EPprobitCxx(mat X, mat Y, double s)
 }
 
 RCPP_MODULE(EPprobitCxx) {
-	Rcpp::function( "EPprobitCxx", &EPprobitCxx);
+  Rcpp::function( "EPprobitCxx", &EPprobitCxx);
 }
 // [[Rcpp::export]]
 Rcpp::List EPlogitCxx(mat X, mat Y, double s)
@@ -34,5 +34,5 @@ Rcpp::List EPlogitCxx(mat X, mat Y, double s)
 				  Rcpp::Named("Z") = Z);
 }
 RCPP_MODULE(EPlogitCxx) {
-	Rcpp::function( "EPlogitCxx", &EPlogitCxx);
+  Rcpp::function( "EPlogitCxx", &EPlogitCxx);
 }

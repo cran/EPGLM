@@ -13,7 +13,7 @@ The package computes a Gaussian approximation of a Bayesian probit/logit using e
 Package: \tab EPGLM\cr
 Type: \tab Package\cr
 Version: \tab 1.0\cr
-Date: \tab 2015-07-29\cr
+Date: \tab 2016-08-23\cr
 License: \tab GPL (>= 2)\cr
 }
 }
@@ -22,6 +22,6 @@ Author: James Ridgway\cr
 Maintainer: James Ridgway <james.ridgway@ensae.fr>
 }
 \references{
-N. Chopin and J. Ridgway. Leave Pima Indians alone: binary regression as a benchmark for Bayesian computation. arxiv:1506.08640.
+N. Chopin and J. Ridgway. Leave Pima Indians alone: binary regression as a benchmark for Bayesian computation. arxiv preprint <https://arxiv.org/abs/1506.08640>
 }
 \keyword{ Bayesian binary regression, Expectation Propagation}
